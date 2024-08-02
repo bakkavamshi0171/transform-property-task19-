@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width:100vw;
+            height:100vh;
+            background-color: black ;
+        }
+        .button1:active ~ .car1{
+            transform: translateX(90%);
+            transition: transform 10s;
+        }
+        .button2:active ~ .car2{
+            transform: translateX(90%);
+            transform-origin: transform;
+            transition-duration: 8s;
+        }
+        .button3:active ~ .car3{
+            transform: translateX(90%);
+            transform-origin: transform;
+            transition-duration: 6s;
+        }
+        .button4:active ~ .car4{
+            transform: translateX(90%);
+            transform-origin: transform;
+            transition-duration: 3s;
+        }
+        .race:active ~ .car1{
+            transform: translateX(90%);
+            transition: transform 10s;
+        }
+        .race:active ~ .car2{
+            transform: translateX(90%);
+            transform-origin: transform;
+            transition-duration: 8s;
+        }
+        .race:active ~ .car3{
+            transform: translateX(90%);
+            transform-origin: transform;
+            transition-duration: 6s;
+        }
+        .race:active ~ .car4{
+            transform: translateX(90%);
+            transform-origin: transform;
+            transition-duration: 3s;
+        }
+        .btn{
+            text-align: center;
+            
+        }
+        .btn{
+            background-color: blue;
+            width:100px;
+            margin-top: 20px;
+            height:40px;
+            color: white;
+            font-size: x-large;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="button">
+           
+                <button class="btn button1"> 5Kph</button>
+                <button class="btn button2">10kph</button>
+                <button class="btn button3">15kph</button>
+                <button class=" btn button4">20kph</button>
+                <button class="btn race" style="background-color: green;">Race</button>
+           
+            <div class="car1"><img src="icons8-car-100.png"></div><hr>
+            <div class="car2"><img src="icons8-car-64.png"></div><hr>
+            <div class="car3"><img src="icons8-car-96.png"></div><hr>
+             <div class="car4"><img src="icons8-car-96 (1).png"></div> <hr>
+        </div>
+       
+    </div>
+</body>
+</html>
